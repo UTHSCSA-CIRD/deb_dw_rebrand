@@ -14,6 +14,5 @@ By following the above syntax you make the `webclient` directory a git repo, so 
 
     git pull
 
-Coming soon: instructions on testing the rebranding on your Firefox or Chrome web browser without altering your i2b2
-
+To non-destructively test in your own Chrome browser without altering production i2b2 in any way, go to your i2b2 page and hit control-shift-c. A debugging panel will appear in the bottom. Click on the `Console` tab. Open the jquery_test.js file, copy-paste its contents into the console, and hit `Enter`. You will need to repeat after you log in and after certain dialogues become newly active.
 
