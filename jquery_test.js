@@ -61,8 +61,6 @@ $j('li.selected').children('.yui-nav a').css('background-color','rgb(222,235,239
  var cssfile = 'i2b2-NEW.css';
 */
 
-$j('head link')[6].remove();
-$j('head link')[6].remove();
 cssFiles = ['assets/i2b2.css','assets/i2b2-NEW.css'];
 function testRemoteBranding(cssfile,remurl='https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/v0.0.1RC/'){
   /* remove the local css link */
