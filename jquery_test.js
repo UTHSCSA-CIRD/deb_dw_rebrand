@@ -53,3 +53,46 @@ $j.each($j('.queryPanelDisabled'),function(xx,yy) {yy.style.setProperty('backgro
 $j('.USETABS, #anaPluginList').css('background-color','rgb(175,191,191)');
 $j('li').not('.selected').children('.yui-nav a').css('background-color','rgb(222,239,239)');
 $j('li.selected').children('.yui-nav a').css('background-color','rgb(222,235,239)');
+
+
+
+/*
+ var remurl = 'https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/v0.0.1RC/assets/';
+ var cssfile = 'i2b2-NEW.css';
+*/
+
+$j('head link')[6].remove();
+$j('head link')[6].remove();
+cssFiles = ['assets/i2b2.css','assets/i2b2-NEW.css'];
+function testRemoteBranding(cssfile,remurl='https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/v0.0.1RC/'){
+  /* remove the local css link */
+  $j("head link[href*='"+cssfile+"'").remove();
+  /* get a handle to the document head */
+  var head = document.head || document.getElementsByTagName('head')[0];
+  /* set up handle for AJAX request */
+  var xhttp = new XMLHttpRequest();
+  /* read the remote css replacement file */
+  xhttp.open('GET', remurl+cssfile);
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState === 4) {
+      if (xhttp.status === 200) {
+	var style = document.createElement('style');
+	style.type = 'text/css';
+	/* prepend fully qualified remote URL to each image */
+	cssQualified = xhttp.responseText.gsub('images/',remurl+'assets/images/');
+	/* Append as inline css to replace the sheet removed above*/
+	if (style.styleSheet) {
+	  style.styleSheet.cssText = cssQualified;
+	} else {
+	  style.appendChild(document.createTextNode(cssQualified));
+	}
+	head.appendChild(style);
+	return cssQualified;
+      } else {
+	console.log("Error", xhttp.statusText);
+      }
+    }
+  }
+  xhttp.send();
+}
+for(ii in cssFiles) testRemoteBranding(cssFiles[ii]);
