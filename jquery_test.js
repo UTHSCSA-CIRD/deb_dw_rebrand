@@ -53,7 +53,12 @@
  var cssfile = 'i2b2-NEW.css';
 */
 
-cssFiles = ['assets/i2b2.css','assets/i2b2-NEW.css'];remurl='https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/v0.0.1RC/';
+cssFiles = ['assets/i2b2.css','assets/i2b2-NEW.css','js-i2b2/cells/PLUGINMGR/assets/vwViewer.css'
+	   ,'js-i2b2/cells/PM/assets/modProjects.css','js-i2b2/cells/CRC/assets/query_report.css'
+	   ,'js-i2b2/ui.styles/ui.styles.css'];
+	   
+remurl='https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/v0.0.1RC/';
+
 function testRemoteBranding(cssfile,remurl){
   /* remove the local css link */
   $j("head link[href*='"+cssfile+"'").remove();
@@ -85,13 +90,12 @@ function testRemoteBranding(cssfile,remurl){
   }
   xhttp.send();
 }
-testRemoteBranding(cssFiles[0],remurl);
-testRemoteBranding(cssFiles[1],remurl);
+$j.each(cssFiles,function(ii) {testRemoteBranding(cssFiles[ii],remurl)})
+
 /* Replace the title on the top right */
 $j('#topBarTitle').prop('src',remurl+'assets/images/title.gif');
 
 /* Remove i2b2 from login box menu */
 $j('.formDiv').children('div.label')[2].innerText = 'Server:';
 
-/* Remove the string "i2b2 " from login header */
 $j('#i2b2_login_modal_dialog_h').html(function(_,content){return content.gsub('i2b2 ','')});
