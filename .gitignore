@@ -1,0 +1,8 @@
+# do not add .html, .php, .htm, or .js files unless overridden on a case by case basis
+*.js
+*.html
+*.htm
+*.php
+*.xml
+# ignore swap files created by text editors
+*-swp
