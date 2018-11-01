@@ -53,11 +53,23 @@
  var cssfile = 'i2b2-NEW.css';
 */
 
-cssFiles = ['assets/i2b2.css','assets/i2b2-NEW.css','js-i2b2/cells/PLUGINMGR/assets/vwViewer.css'
-	   ,'js-i2b2/cells/PM/assets/modProjects.css','js-i2b2/cells/CRC/assets/query_report.css'
-	   ,'js-i2b2/ui.styles/ui.styles.css'];
-	   
-remurl='https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/v0.0.1RC/';
+// cssFiles = ['assets/i2b2.css','assets/i2b2-NEW.css','js-i2b2/cells/PLUGINMGR/assets/vwViewer.css'
+// 	   ,'js-i2b2/cells/PM/assets/modProjects.css','js-i2b2/cells/CRC/assets/query_report.css'
+// 	   ,'js-i2b2/ui.styles/ui.styles.css'];
+
+cssFiles = [
+  'js-i2b2/ui.styles/ui.styles.css'
+  ,'js-i2b2/cells/CRC/assets/query_report.css'
+  ,'assets/i2b2.css','assets/i2b2-NEW.css'
+  ,'js-i2b2/cells/PM/assets/modProjects.css'
+  //,'assets/help_viewer.css'
+  ,'assets/new-treeview.css','assets/mod-treeview.css','assets/tree.css'
+  ,'js-i2b2/cells/PLUGINMGR/assets/vwViewer.css'
+  ,'assets/msg_sniffer.css','assets/msg_snifferIE6.css'
+  ]
+
+//remurl='https://github.com/UTHSCSA-CIRD/deb_dw_rebrand/raw/f_less/webclient.test/';
+remurl='https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/f_less/webclient.test/';
 
 function testRemoteBranding(cssfile,remurl){
   /* remove the local css link */
@@ -74,15 +86,15 @@ function testRemoteBranding(cssfile,remurl){
 	var style = document.createElement('style');
 	style.type = 'text/css';
 	/* prepend fully qualified remote URL to each image */
-	cssQualified = xhttp.responseText.gsub('images/',remurl+'assets/images/');
+	//cssQualified = xhttp.responseText.gsub('images/',remurl+'assets/images/');
 	/* Append as inline css to replace the sheet removed above*/
 	if (style.styleSheet) {
-	  style.styleSheet.cssText = cssQualified;
+	  style.styleSheet.cssText = xhttp.responseText; //cssQualified;
 	} else {
-	  style.appendChild(document.createTextNode(cssQualified));
+	  style.appendChild(document.createTextNode(xhttp.responseText));
 	}
 	head.appendChild(style);
-	return cssQualified;
+	//return cssQualified;
       } else {
 	console.log("Error", xhttp.statusText);
       }
