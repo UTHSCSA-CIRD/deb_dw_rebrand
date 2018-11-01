@@ -4,7 +4,7 @@ body {
   font-family: arial,helvetica;
   font-size: 12px;
   line-height: 16px;
-  background: url("https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/f_less/webclient.test/assets/images/background.gif");
+  background: url("https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/v0.0.1RC_01/webclient.test/assets/images/background.gif");
   background-color: "#D9ECF0";
 }
 .yui-skin-sam .yui-dialog .ft span.default button {
@@ -19,7 +19,7 @@ DIV.yuimenu DIV.bd {
 .yui-skin-sam .yui-panel .hd {
   color: "#FFFFFF" !important;
   background: transparent !important;
-  background-image: url("https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/f_less/webclient.test/assets/images/top_hive.gif") !important;
+  background-image: url("https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/v0.0.1RC_01/webclient.test/assets/images/top_hive.gif") !important;
   background-repeat: repeat-x !important;
   font-size: 14px !important;
   font-weight: bold !important;
@@ -135,7 +135,7 @@ DIV.yuimenu DIV.bd {
 }
 #standardQuery {
   padding-left: 19px;
-  background: url("https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/f_less/webclient.test/assets/images/icon_db.gif") no-repeat;
+  background: url("https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/v0.0.1RC_01/webclient.test/assets/images/icon_db.gif") no-repeat;
   font-weight: bold;
 }
 #queryBuildBox {
