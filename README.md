@@ -42,7 +42,9 @@ If you have a fresh copy of the unmodified i2b2 css files in the webclient.orig 
     done;
     # copy each image file to the webclient.test directory unless it already exists (the webclient.less
     # directory doesn't need its own images)
-    find . -name *.jpg -o -name *.png -o -name *.gif -o -name *.JPG -exec cp -n {} ../webclient.test/{} \;
+    for ii in $(find . -name *.jpg -o -name *.png -o -name *.gif -o -name *.JPG); do 
+      cp -n $ii ../webclient.test/$ii;
+    done;
     popd;
 
 ### Convert the less files back to css (for testing)
