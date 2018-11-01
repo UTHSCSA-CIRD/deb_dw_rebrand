@@ -52,7 +52,7 @@ If you have a fresh copy of the unmodified i2b2 css files in the webclient.orig 
     pushd webclient.less;
     for ii in $(find -name *.less); do 
       jj="../webclient.test/"$(echo $ii|sed s/less/css/);
-      lessc --include-path=..:../webclient.test $ii $jj;
+      lessc --verbose --include-path=..:../webclient.test $ii $jj;
     done;
     popd;
 
