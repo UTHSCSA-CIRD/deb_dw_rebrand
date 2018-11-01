@@ -2,7 +2,7 @@ DIV#anaPluginViewBox {
   position: absolute;
 }
 DIV#anaPluginViewBox DIV.PluginViewBox {
-  background: "#BBCCEE" none repeat scroll 0%;
+  background: "#AFBFBF" none repeat scroll 0%;
   border: 1px solid "#667788";
   clear: both;
   display: block;
@@ -29,7 +29,7 @@ DIV#anaPluginViewFrame DIV.initialMsg {
   top: 49%;
 }
 DIV#anaPluginViewBox DIV#anaPluginViewFrame.USETABS {
-  background: "#BBCCEE";
+  background: "#AFBFBF";
   border: 0px;
   padding: 1px;
   margin: 0px;

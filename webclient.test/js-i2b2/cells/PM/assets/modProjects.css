@@ -28,7 +28,7 @@ DIV#pmNav {
   position: absolute;
 }
 DIV#pmNav .bodyBox {
-  background: "#BBCCEE" none repeat scroll 0% 50%;
+  background: "#AFBFBF" none repeat scroll 0% 50%;
   border: 1px solid "#667788";
   clear: both;
   display: block;
@@ -44,7 +44,7 @@ DIV#pmMain {
   position: absolute;
 }
 DIV#pmMain .bodyBox {
-  background: "#BBCCEE" none repeat scroll 0% 50%;
+  background: "#AFBFBF" none repeat scroll 0% 50%;
   border: 1px solid "#667788";
   clear: both;
   display: block;
@@ -67,7 +67,7 @@ DIV#pmParam {
   position: absolute;
 }
 DIV#pmParam .bodyBox {
-  background: "#BBCCEE" none repeat scroll 0% 50%;
+  background: "#AFBFBF" none repeat scroll 0% 50%;
   border: 1px solid "#667788";
   clear: both;
   display: block;
