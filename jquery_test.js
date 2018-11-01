@@ -68,8 +68,8 @@ cssFiles = [
   ,'assets/msg_sniffer.css','assets/msg_snifferIE6.css'
   ]
 
-remurl='https://github.com/UTHSCSA-CIRD/deb_dw_rebrand/raw/f_less/webclient.test/';
-//remurl='https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/f_less/webclient.test/';
+//remurl='https://github.com/UTHSCSA-CIRD/deb_dw_rebrand/raw/f_less/webclient.test/';
+remurl='https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/f_less/webclient.test/';
 
 function testRemoteBranding(cssfile,remurl){
   /* remove the local css link */
