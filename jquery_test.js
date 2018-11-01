@@ -65,6 +65,7 @@ cssFiles = [
   //,'assets/help_viewer.css'
   ,'assets/new-treeview.css','assets/mod-treeview.css','assets/tree.css'
   ,'js-i2b2/cells/PLUGINMGR/assets/vwViewer.css'
+  //,'js-i2b2/cells/plugins/standard/Dem1Set/assets/vwDem1Set.css'
   ,'assets/msg_sniffer.css','assets/msg_snifferIE6.css'
   ]
 
