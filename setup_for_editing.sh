@@ -46,6 +46,12 @@ rawurlencode() {
 # url encoded version of remurl and its target
 export enctarget="remurl%3D%2[27].*%2F%2[27]";
 export remurlenc=$(rawurlencode remurl=\"$remurl/\");
+# update the reference bookmarklet
+sed -i  "s|$enctarget|$remurlenc|" bookmarklet.js;
+# insert that bookmarklet into the html example
+sed -i "s|<a href=\".*\">Rebrand i2b2|<a href=\"$(cat bookmarklet.js)\">Rebrand i2b2|" bookmarklet_test.html;
+# and the md (though it doesn't work there at this time)
+sed -i "s|<a href=\".*\">bookmarklet|<a href=\"$(cat bookmarklet.js)\">bookmarklet|" README.md;
 
 # replace them in the minified bookmarklets
 sed -i "s/$enctarget/$remurlenc/g" README.md;

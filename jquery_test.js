@@ -36,19 +36,21 @@
 // $j('li').not('.selected').children('.yui-nav a').css('background-color','rgb(222,239,239)');
 //window.location.href = "https://i2b2.uthscsa.edu/webclient/";
 
-cssFiles = [
-  'js-i2b2/ui.styles/ui.styles.css'
-  ,'js-i2b2/cells/CRC/assets/query_report.css'
-  ,'assets/i2b2.css','assets/i2b2-NEW.css'
-  ,'js-i2b2/cells/PM/assets/modProjects.css'
   //,'assets/help_viewer.css'
-  ,'assets/new-treeview.css','assets/mod-treeview.css','assets/tree.css'
-  ,'js-i2b2/cells/PLUGINMGR/assets/vwViewer.css'
   //,'js-i2b2/cells/CRC/assets/main_list.css'
   //,'js-i2b2/cells/ONT/assets/main_list.css'
   //,'js-i2b2/cells/PLUGINMGR/assets/main_list.css'
   //,'js-i2b2/cells/WORK/assets/main_list.css'
   //,'js-i2b2/cells/plugins/standard/Dem1Set/assets/vwDem1Set.css'
+
+
+cssFiles = [
+  'js-i2b2/ui.styles/ui.styles.css'
+  ,'js-i2b2/cells/CRC/assets/query_report.css'
+  ,'assets/i2b2.css','assets/i2b2-NEW.css'
+  ,'js-i2b2/cells/PM/assets/modProjects.css'
+  ,'assets/new-treeview.css','assets/mod-treeview.css','assets/tree.css'
+  ,'js-i2b2/cells/PLUGINMGR/assets/vwViewer.css'
   ,'assets/msg_sniffer.css','assets/msg_snifferIE6.css'
   ]
 
@@ -62,7 +64,7 @@ impCss = {
 };
   
 //remurl='https://github.com/UTHSCSA-CIRD/deb_dw_rebrand/raw/f_less/webclient.test/';
-remurl='https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/v0.0.1RC_01/webclient.test/';
+remurl='https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/integration/webclient.test/';
 
 function testRemoteBranding(cssfile,remurl){
   /* remove the local css link */
