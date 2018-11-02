@@ -163,7 +163,7 @@ DIV.yuimenu DIV.bd {
   line-height: 12px;
 }
 .queryPanelDisabled {
-  background: #DBE8FF !important;
+  background: #DDEEE0 !important;
 }
 .queryPanelClear {
   position: absolute;
@@ -176,7 +176,7 @@ DIV.yuimenu DIV.bd {
   top: 45px;
   width: 38px;
   height: 16px;
-  background: #CBD8EF;
+  background: #DDFFEE;
   border: 1px solid #667788;
   overflow: hidden;
   line-height: 16px;
@@ -187,7 +187,7 @@ DIV.yuimenu DIV.bd {
   top: 45px;
   width: 80px;
   height: 16px;
-  background: #CBD8EF;
+  background: #DDFFEE;
   border: 1px solid #667788;
   overflow: hidden;
   line-height: 16px;
@@ -215,14 +215,14 @@ DIV.yuimenu DIV.bd {
   top: 45px;
   width: 46px;
   height: 16px;
-  background: #CBD8EF;
+  background: #DDFFEE;
   border: 1px solid #667788;
   overflow: hidden;
   line-height: 16px;
   text-align: center;
 }
 .queryPanelButtonHover:hover {
-  background: #DBE8FF;
+  background: #DDEEE0;
 }
 .queryPanelButton {
   color: #000000;
@@ -317,7 +317,7 @@ DIV.yuimenu DIV.bd {
   text-overflow: ellipsis;
   line-height: 15px;
   height: 15px;
-  background-color: #CBD8EF;
+  background-color: #DDFFEE;
   border: 1px solid #63758C;
   color: #4C5676;
 }
