@@ -22,6 +22,12 @@ export remurl="$gitbase$gitrepo/$gitbranch/$testdir";
 # Files that mksedscr will use to create a sed script
 export lessfiles=(global.less altspellings.less);
 
+# Make sure that the test script is using the correct remurl
+sed -i "/^remurl=/ s|https://.*/|$remurl/|" jquery_test.js;
+# Make sure that global.less has the right branch and url
+sed -i "/^@branch:/ s|\".*\";|\"$gitbranch\";|" global.less;
+sed -i "/^@rooturl:/ s|['\"].*['\"];|\"$remurl/\";|" global.less;
+
 # Creates a sed script for converting raw i2b2 css to variable-substituted less files
 mksedscr (){
     echo "1 i @import \"global.less\";\n\n"> css2less.sed;
@@ -53,6 +59,7 @@ mkless () {
     popd;
 }
 
+# Substitutes variables in less files making them into the test css files
 mktest () {
     pushd "$lessdir";
     for ii in $(find -name *.less); do 
