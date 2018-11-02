@@ -1,15 +1,5 @@
 /* jQuery client side preview script */
 
-// /* Where to look for rebranded pictures etc */
-// testurl = "https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/v0.0.1RC/";
-// 
-// /* Replace the tissue sample logo with UT Health logo */
-// $j('DIV#i2b2_login_modal_dialog .login-dialog').css('background-image',"url(\""+testurl+"js-i2b2/cells/PM/assets/login_bg.jpg\")");
-// 
-// 
-// /* Replace the header background of the login box */
-// $j('#i2b2_login_modal_dialog_h,.hd')[0].style.setProperty('background-image','url('+testurl+'assets/images/top_hive.gif)','important');
-// 
 // /* DEB themed background */
 // $j('body').css('background-image','url('+testurl+'assets/images/background.gif)');
 // 
@@ -44,18 +34,7 @@
 // /* Recolor the analysis tool backgrounds and tabs*/
 // $j('.USETABS, #anaPluginList').css('background-color','rgb(175,191,191)');
 // $j('li').not('.selected').children('.yui-nav a').css('background-color','rgb(222,239,239)');
-// $j('li.selected').children('.yui-nav a').css('background-color','rgb(222,235,239)');
-
-
-
-/*
- var remurl = 'https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/v0.0.1RC/assets/';
- var cssfile = 'i2b2-NEW.css';
-*/
-
-// cssFiles = ['assets/i2b2.css','assets/i2b2-NEW.css','js-i2b2/cells/PLUGINMGR/assets/vwViewer.css'
-// 	   ,'js-i2b2/cells/PM/assets/modProjects.css','js-i2b2/cells/CRC/assets/query_report.css'
-// 	   ,'js-i2b2/ui.styles/ui.styles.css'];
+//window.location.href = "https://i2b2.uthscsa.edu/webclient/";
 
 cssFiles = [
   'js-i2b2/ui.styles/ui.styles.css'
@@ -65,15 +44,29 @@ cssFiles = [
   //,'assets/help_viewer.css'
   ,'assets/new-treeview.css','assets/mod-treeview.css','assets/tree.css'
   ,'js-i2b2/cells/PLUGINMGR/assets/vwViewer.css'
+  //,'js-i2b2/cells/CRC/assets/main_list.css'
+  //,'js-i2b2/cells/ONT/assets/main_list.css'
+  //,'js-i2b2/cells/PLUGINMGR/assets/main_list.css'
+  //,'js-i2b2/cells/WORK/assets/main_list.css'
+  //,'js-i2b2/cells/plugins/standard/Dem1Set/assets/vwDem1Set.css'
   ,'assets/msg_sniffer.css','assets/msg_snifferIE6.css'
   ]
 
+impCss = {
+   'vwViewer.css': 'js-i2b2/cells/PLUGINMGR/assets/'
+  ,'vwHistory.css': 'js-i2b2/cells/CRC/assets/'
+  ,'vwQryTool.css': 'js-i2b2/cells/CRC/assets/'
+  ,'vwStatus.css': 'js-i2b2/cells/CRC/assets/'
+  ,'vwWork.css': 'js-i2b2/cells/WORK/assets/'
+  ,'ontMain.css': 'js-i2b2/cells/ONT/assets/'
+};
+  
 //remurl='https://github.com/UTHSCSA-CIRD/deb_dw_rebrand/raw/f_less/webclient.test/';
-remurl='https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/f_less/webclient.test/';
+remurl='https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/v0.0.1RC_01/webclient.test/';
 
 function testRemoteBranding(cssfile,remurl){
   /* remove the local css link */
-  $j("head link[href*='"+cssfile+"'").remove();
+  //$j("head link[href*='"+cssfile+"'").remove();
   /* get a handle to the document head */
   var head = document.head || document.getElementsByTagName('head')[0];
   /* set up handle for AJAX request */
@@ -102,12 +95,30 @@ function testRemoteBranding(cssfile,remurl){
   }
   xhttp.send();
 }
-$j.each(cssFiles,function(ii) {testRemoteBranding(cssFiles[ii],remurl)})
 
-/* Replace the title on the top right */
-$j('#topBarTitle').prop('src',remurl+'assets/images/title.gif');
+var button = document.createElement("Button");
+button.innerHTML = "Rebrand!";
+button.style = "top:0;right:0;position:fixed;"
+button.onclick = function(){
+  $j.each(cssFiles,function(ii) {testRemoteBranding(cssFiles[ii],remurl);}); //static css 
+  $j.each(impCss,function(kk,vv){testRemoteBranding(vv+kk,remurl);}); //imported css
+  $j('#topBarTitle').prop('src',remurl+'assets/images/title.gif'); //top-left title
+  $j('.formDiv').children('div.label')[2].innerText = 'Server:'; //no i2b2 on box menu
+  $j('#i2b2_login_modal_dialog_h').html(function(_,content){return content.gsub('i2b2 ','')}); //debrand login
+}
+document.body.appendChild(button);
 
-/* Remove i2b2 from login box menu */
-$j('.formDiv').children('div.label')[2].innerText = 'Server:';
+// get rid of statically linked sheets
+//$j.each(cssFiles,function(ii) {$j("head link[href*='"+cssFiles[ii]+"'").remove()});
 
-$j('#i2b2_login_modal_dialog_h').html(function(_,content){return content.gsub('i2b2 ','')});
+// How to track down each of those nasty imported sheets... first we remove anything for which
+// we have a replacement
+//ss = $j("link[href*='main_list.css']").map(function() { return this.sheet; }).get();
+
+//for(ii in ss){for(jj in ss[ii].cssRules){
+//  if(Object.keys(impCss).indexOf(ss[ii].cssRules[jj].href)>=0){ss[ii].removeRule(jj)}}};
+
+
+/* The following got rejected because of strict MIME type. So instead I have to crunch down the above
+javascript:(function(){_my_script=document.createElement('SCRIPT');_my_script.type='text/javascript';_my_script.src='https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/v0.0.1RC_01/jquery_test.js';document.getElementsByTagName('head')[0].appendChild(_my_script);})();
+*/

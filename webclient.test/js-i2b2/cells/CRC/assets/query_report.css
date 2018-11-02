@@ -23,29 +23,29 @@
   float: right;
   padding: 5px;
   margin-top: 5px;
-  background-color: "#6677AA";
+  background-color: #448877;
   font-weight: bold;
-  color: "#FFFFFF";
-  border: 1px solid "#667788";
+  color: #FFFFFF;
+  border: 1px solid #667788;
   text-decoration: none;
 }
 .printReportButton:hover {
-  background-color: "#7687BF";
+  background-color: #7687BF;
 }
 #infoQueryStatusReport {
   font-family: 'Open Sans', sans-serif;
 }
 .descHead {
-  border-bottom: 1px solid "#006699";
+  border-bottom: 1px solid #006699;
   font-weight: bold;
   font-size: 20px;
   padding-top: 15px;
-  color: "#006699";
+  color: #006699;
   font-family: 'Open Sans', sans-serif;
   padding-bottom: 8px;
 }
 .QRMainHeader {
-  border-bottom: 1px solid "#000000";
+  border-bottom: 1px solid #000000;
   font-weight: bold;
   font-size: 28px;
   padding-top: 15px;
@@ -54,9 +54,9 @@
 }
 .descResultshead {
   FONT-WEIGHT: bold;
-  COLOR: "#FFFFFF";
+  COLOR: #FFFFFF;
   /* FONT-FAMILY: Arial, Helvetica, sans-serif; */
-  BACKGROUND-COLOR: "#6699CC";
+  BACKGROUND-COLOR: #6699CC;
   TEXT-ALIGN: center;
 }
 .titleDivs {
@@ -66,7 +66,7 @@
   font-size: 20px;
 }
 .subTitleDivs {
-  color: "#6699CC";
+  color: #6699CC;
   font-family: Open Sans;
   font-size: 16px;
   font-weight: bold;
@@ -82,7 +82,7 @@
 #qdHeaderTable {
   width: 625px;
   border: 0px;
-  color: "#006699";
+  color: #006699;
   font-size: 14px;
 }
 #queryDetailsTable {
@@ -105,10 +105,10 @@
   width: 640px;
   display: block;
   border: 2px double black;
-  background: "#CCCCCC";
+  background: #CCCCCC;
 }
 .notOpPanel {
-  background: "#FFA4A4";
+  background: #FFA4A4;
 }
 .panelOperator {
   height: 30px;
@@ -133,7 +133,7 @@ table.qrPanelItemTable {
 }
 .qrsTable {
   width: 250 px;
-  border: 1px double "#6699CC";
+  border: 1px double #6699CC;
 }
 .qrsTable td {
   width: 50%;
@@ -165,12 +165,12 @@ table.qrPanelItemTable {
 }
 .eventsRel {
   width: 640px;
-  border: 1px solid "#667788";
-  background: "#7FFFD4";
+  border: 1px solid #667788;
+  background: #7FFFD4;
 }
 .eventsRelHdr {
   width: 640px;
-  color: "#333333";
+  color: #333333;
   font-weight: bold;
   font-size: 18px;
 }
@@ -188,7 +188,7 @@ table.qrPanelItemTable {
   margin-left: 60px;
 }
 .reultsTable td {
-  border: 1px double "#6699CC";
+  border: 1px double #6699CC;
 }
 #QueryReportLoading img {
   display: block;
@@ -200,7 +200,7 @@ table.qrPanelItemTable {
 }
 #queryReport-viewer-body {
   overflow: auto;
-  background-color: "#FFFFFF";
+  background-color: #FFFFFF;
 }
 .qrGraphs .c3-legend-item {
   cursor: auto !important;

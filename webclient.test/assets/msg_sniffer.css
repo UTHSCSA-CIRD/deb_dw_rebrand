@@ -1,15 +1,15 @@
 #commViewerSingleMsg-body PRE.msgXML.msgSent {
-  border-left: 8px solid "#FFAFAF";
+  border-left: 8px solid #FFAFAF;
   padding: 4px;
 }
 #commViewerSingleMsg-body PRE.msgXML.msgReceive {
-  border-left: 8px solid "#AFFFAF";
+  border-left: 8px solid #AFFFAF;
   padding: 4px;
 }
 BODY.msgSnifferViewer {
   margin: 0px;
   padding: 0px;
-  background: "#BBCCEE";
+  background: #AFBFBF;
 }
 BODY.msgSnifferViewer DIV.IndexRecord {
   font-size: 10px !important;
@@ -33,7 +33,7 @@ BODY.msgSnifferViewer DIV.sentStatus {
   height: 12px;
   width: 22px;
   float: left;
-  border: 1px solid "#000000";
+  border: 1px solid #000000;
   text-align: center;
   line-height: 10px;
   font-size: 10px;
@@ -47,8 +47,8 @@ BODY.msgSnifferViewer DIV.recvStatus {
   clear: both;
 }
 BODY.msgSnifferViewer DIV.msgXML {
-  background: "#FFFFFF";
-  border: 1px solid "#667788";
+  background: #FFFFFF;
+  border: 1px solid #667788;
   border-top: none;
   xheight: 100%;
   xoverflow: scroll;
@@ -59,14 +59,14 @@ BODY.msgSnifferViewer pre.msgXML {
   padding: 4px;
 }
 BODY.msgSnifferViewer pre.msgXML.msgSent {
-  border-color: "#FFAFAF";
+  border-color: #FFAFAF;
 }
 BODY.msgSnifferViewer pre.msgXML.msgRcvd {
-  border-color: "#AFFFAF";
+  border-color: #AFFFAF;
 }
 BODY.msgSnifferViewer DIV.recvStatus.msgError {
-  background: "#FFFF90" !important;
+  background: #FFFF90 !important;
 }
 body.msgSnifferViewer pre.msgXML.msgError {
-  border-color: "#FFFF90" !important;
+  border-color: #FFFF90 !important;
 }
