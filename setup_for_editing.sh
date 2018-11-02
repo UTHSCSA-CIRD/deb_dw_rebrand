@@ -67,5 +67,6 @@ mktest () {
       lessc --verbose --include-path="..:../$testdir" $ii $jj;
     done;
     popd;
-    ./patch_imports.sh;
+    # Doesn't get allowed by browser/server 
+    #./patch_imports.sh;
 }
