@@ -60,4 +60,5 @@ mktest () {
       lessc --verbose --include-path="..:../$testdir" $ii $jj;
     done;
     popd;
+    ./patch_imports.sh;
 }
