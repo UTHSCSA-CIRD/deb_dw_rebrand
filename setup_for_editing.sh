@@ -15,6 +15,7 @@ export gitrepo=$(git config --get "remote.origin.url"|sed s/git@github.com://);
 export testdir="webclient.test";
 export lessdir="webclient.less";
 export origdir="webclient.orig";
+export depldir="webclient";
 
 # The default URL for remote testing
 export remurl="$gitbase$gitrepo/$gitbranch/$testdir";
@@ -69,4 +70,23 @@ mktest () {
     popd;
     # Doesn't get allowed by browser/server 
     #./patch_imports.sh;
+}
+
+# Make deployable
+
+mkdeploy () {
+    mktest;
+    pushd "$testdir";
+    # create directories if missing
+    find -type d -exec mkdir -p ../webclient/{} \;
+    # copy over images
+    find -name *.jpg -o -name *.png -o -name *.gif -o -name *.JPG -exec cp {} ../$depldir/{} \;
+    popd;
+    pushd "$lessdir";
+    # process less this time using the local includes
+    for ii in $(find -name *.less); do 
+      jj="../webclient/"$(echo $ii|sed s/less/css/);
+      lessc --verbose --include-path="..:../$depldir" $ii $jj;
+    done;
+    popd;
 }
