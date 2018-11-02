@@ -153,7 +153,7 @@ DIV.yuimenu DIV.bd {
   top: 31px;
   width: 166px;
   height: 13px;
-  background: #6677AA;
+  background: #448877;
   border: 1px solid #667788;
   overflow: hidden;
   color: #FFFFFF;
@@ -341,7 +341,7 @@ DIV.yuimenu DIV.bd {
   padding: 0;
 }
 #joinType {
-  background: #6677AA;
+  background: #448877;
   color: #FFFFFF;
   font-size: 9px;
   margin: 3px;
@@ -382,7 +382,7 @@ DIV.yuimenu DIV.bd {
   line-height: 18px;
 }
 .dialogButton {
-  background: #6677AA;
+  background: #448877;
   color: #FFFFFF;
   font-weight: bold;
   width: 80px;

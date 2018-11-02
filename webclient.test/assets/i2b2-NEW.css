@@ -108,7 +108,7 @@ DIV.tabBox.active {
   height: 20px;
 }
 DIV.tabBox.active DIV {
-  background: #6677AA;
+  background: #448877;
   border: 1px solid #667788;
   color: #FFFFFF;
   font-weight: bold;
@@ -130,7 +130,7 @@ DIV.tabTextBox {
   z-index: 10;
 }
 DIV.tabTextBox DIV {
-  background: #6677AA none repeat scroll 0%;
+  background: #448877 none repeat scroll 0%;
   border: 1px solid #667788;
   color: #FFFFFF;
   font-family: arial,helvetica;

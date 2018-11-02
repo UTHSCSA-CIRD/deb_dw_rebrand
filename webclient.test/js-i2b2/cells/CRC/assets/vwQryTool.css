@@ -65,7 +65,7 @@ DIV#crcQueryToolBox DIV.qryPanel {
 }
 DIV#crcQueryToolBox DIV.qryPanelTitle {
   text-align: center;
-  background: #6677AA none repeat scroll 0%;
+  background: #448877 none repeat scroll 0%;
   border: 1px solid #667788;
   color: #FFFFFF;
   font-size: 11px;
@@ -150,7 +150,7 @@ DIV#crcQueryToolBox DIV.temporalControl {
   width: 200px;
   float: none;
   position: relative;
-  background: #6677AA;
+  background: #448877;
   border: 1px solid #667788;
   font-weight: bold;
   font-family: arial,helvetica;
@@ -177,7 +177,7 @@ DIV#crcQueryToolBox DIV#printQueryBox,
 DIV#crcQueryToolBox DIV#runBox {
   position: relative;
   xdisplay: none;
-  background: #6677AA;
+  background: #448877;
   border: 1px solid #667788;
   font-weight: bold;
   font-family: arial,helvetica;
@@ -208,7 +208,7 @@ a.topicButton {
   display: block;
   text-decoration: none;
   display: inline;
-  background: #6677AA;
+  background: #448877;
   border: 1px solid #667788;
   font-weight: bold;
   font-family: arial,helvetica;
@@ -273,7 +273,7 @@ DIV#crcQueryToolBox DIV.queryBalloon {
   display: none;
 }
 DIV#crcQueryToolBox DIV.queryBalloonAnd {
-  background: #6677AA;
+  background: #448877;
   border: 1px solid #667788;
   width: 45px;
   height: 20px;
