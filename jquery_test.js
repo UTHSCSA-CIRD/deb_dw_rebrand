@@ -65,7 +65,7 @@ cssFiles = [
   //,'assets/help_viewer.css'
   ,'assets/new-treeview.css','assets/mod-treeview.css','assets/tree.css'
   ,'js-i2b2/cells/PLUGINMGR/assets/vwViewer.css'
-  ,'js-i2b2/cells/CRC/assets/main_list.css'
+  //,'js-i2b2/cells/CRC/assets/main_list.css'
   //,'js-i2b2/cells/ONT/assets/main_list.css'
   //,'js-i2b2/cells/PLUGINMGR/assets/main_list.css'
   //,'js-i2b2/cells/WORK/assets/main_list.css'
