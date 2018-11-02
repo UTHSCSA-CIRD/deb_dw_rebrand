@@ -7,5 +7,7 @@
 # files and then hardcoding the following transformations.
 
 # The leading parentheses are needed to avoid re-replacement
-sed -i "s|(vwQryTool|($remurl/vwQryTool|" webclient.test/js-i2b2/cells/CRC/assets/main_list.css;
-sed -i "s|(vwStatus|($remurl/vwStatus|" webclient.test/js-i2b2/cells/CRC/assets/main_list.css;
+sed -i "s|(.*vwQryTool|($remurl/js-i2b2/cells/CRC/assets/vwQryTool|" \
+  webclient.test/js-i2b2/cells/CRC/assets/main_list.css;
+sed -i "s|(.*vwStatus|($remurl/js-i2b2/cells/CRC/assets/vwStatus|" \
+  webclient.test/js-i2b2/cells/CRC/assets/main_list.css;
