@@ -1,0 +1,97 @@
+@import "global.less";
+
+
+
+DIV#anaPluginViewBox {
+	position: absolute;
+}
+
+	
+DIV#anaPluginViewBox DIV.PluginViewBox {
+	background: @brd_n_tab none repeat scroll 0%;
+	border: 1px solid @borderoutln;
+	clear: both;
+	display: block;
+	overflow: hidden;
+	padding: 5px;
+	position: relative;
+	top: -1px;
+	height: auto;
+	width: auto;
+	z-index: 0;
+}
+
+
+DIV#anaPluginViewBox DIV#anaPluginViewFrame {
+	background: @white none repeat scroll 0%;
+	border: 1px solid @borderoutln;
+	padding: 0px;
+	margin: 0px;
+	overflow:auto;
+}
+
+
+DIV#anaPluginViewFrame DIV.initialMsg {
+	color:@actvtab;
+	font-size:20px;
+	position:relative;
+	text-align:center;
+	top:49%;	
+}
+
+DIV#anaPluginViewBox DIV#anaPluginViewFrame.USETABS {
+	background: @brd_n_tab;
+	border: 0px;
+	padding: 1px;
+	margin: 0px;
+	overflow:hidden;
+}
+
+
+
+/***************** YUI Tabs Override *****************/
+
+DIV#anaPluginViewFrame.USETABS .yui-navset .yui-nav,  
+DIV#anaPluginViewFrame.USETABS .yui-navset .yui-navset-top .yui-nav {
+    border:none; /* tab container border */
+}
+
+DIV#anaPluginViewFrame.USETABS .yui-navset .yui-nav a,  
+DIV#anaPluginViewFrame.USETABS .yui-navset .yui-navset-top .yui-nav a {  
+    background:@vwview_bg; /* tab background */
+    border-width:1px 1px 0 1px;   
+    border-color:@pluginbrd_dark;
+}  
+
+DIV#anaPluginViewFrame.USETABS .yui-navset .yui-nav .selected a,   
+DIV#anaPluginViewFrame.USETABS .yui-navset .yui-nav .selected a:focus,
+DIV#anaPluginViewFrame.USETABS .yui-navset .yui-nav .selected a:hover { 
+    background:@plugin_top_n_field; /* selected tab background --BBCCEE */ 
+    color:@black;   
+}  
+  
+DIV#anaPluginViewFrame.USETABS .yui-navset .yui-nav a:hover,  
+DIV#anaPluginViewFrame.USETABS .yui-navset .yui-nav a:focus {  
+    background:@vwview_hvbg; /* tab hover background */
+} 
+
+
+DIV#anaPluginViewFrame.USETABS .yui-navset .yui-nav .selected a,  
+DIV#anaPluginViewFrame.USETABS .yui-navset .yui-nav .selected a em {  
+    border-color:@pluginbrd_dark; /* selected tab border color --808080 */  
+} 
+
+DIV#anaPluginViewFrame.USETABS .yui-navset .yui-content,  
+DIV#anaPluginViewFrame.USETABS .yui-navset .yui-navset-top .yui-content {  
+    background:@plugin_top_n_field; /* tab content background --BBCCEE */ 
+    border-color:@pluginbrd_dark;
+    padding:5px 0 0 0;
+    height:100%;
+}  
+
+DIV#anaPluginViewFrame.USETABS .yui-navset .yui-nav a em,
+DIV#anaPluginViewFrame.USETABS .yui-navset .yui-navset-top .yui-nav a em {
+    border-top:1px solid @pluginbrd_dark; /* tab border --#a3a3a3 */
+}
+
+
