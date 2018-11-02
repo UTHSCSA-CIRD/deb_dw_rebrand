@@ -2,6 +2,10 @@
 
 This is based on the assets folder of our i2b2 v 1.7.09c
 
+## To see how it looks...
+
+<a href=javascript:(function(){function testRemoteBranding(s,e){var t=document.head||document.getElementsByTagName("head")[0],i=new XMLHttpRequest;i.open("GET",e+s),i.onreadystatechange=function(){if(4===i.readyState)if(200===i.status){var s=document.createElement("style");s.type="text/css",s.styleSheet?s.styleSheet.cssText=i.responseText:s.appendChild(document.createTextNode(i.responseText)),t.appendChild(s)}else console.log("Error",i.statusText)},i.send()}cssFiles=["js-i2b2/ui.styles/ui.styles.css","js-i2b2/cells/CRC/assets/query_report.css","assets/i2b2.css","assets/i2b2-NEW.css","js-i2b2/cells/PM/assets/modProjects.css","assets/new-treeview.css","assets/mod-treeview.css","assets/tree.css","js-i2b2/cells/PLUGINMGR/assets/vwViewer.css","assets/msg_sniffer.css","assets/msg_snifferIE6.css"],impCss={"vwViewer.css":"js-i2b2/cells/PLUGINMGR/assets/","vwHistory.css":"js-i2b2/cells/CRC/assets/","vwQryTool.css":"js-i2b2/cells/CRC/assets/","vwStatus.css":"js-i2b2/cells/CRC/assets/","vwWork.css":"js-i2b2/cells/WORK/assets/","ontMain.css":"js-i2b2/cells/ONT/assets/"},remurl="https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/v0.0.1RC_01/webclient.test/",$j.each(cssFiles,function(s){testRemoteBranding(cssFiles[s],remurl)}),$j.each(impCss,function(s,e){testRemoteBranding(e+s,remurl)}),$j("#topBarTitle").prop("src",remurl+"assets/images/title.gif"),$j(".formDiv").children("div.label")[2].innerText="Server:",$j("#i2b2_login_modal_dialog_h").html(function(s,e){return e.gsub("i2b2 ","")}),$j.each(cssFiles,function(s){$j("head link[href*='"+cssFiles[s]+"'").remove()}),ss=$j("link[href*='main_list.css']").map(function(){return this.sheet}).get();for(ii in ss)for(jj in ss[ii].cssRules)Object.keys(impCss).indexOf(ss[ii].cssRules[jj].href)>=0&&ss[ii].removeRule(jj)})()>Scriptlet</a>
+
 
 ** Only edit the image files in the webclient.test directory.** 
 Everywhere else they might get ignored or overwritten. If an image is not added to the `global.less`
