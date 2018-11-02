@@ -100,7 +100,7 @@ DIV#i2b2_projects_modal_dialog DIV.NoDetails {
 /* login dialog box */
 /* DIV#i2b2_login_modal_dialog { border: 1px solid @black; } */
 DIV#i2b2_login_modal_dialog .login-dialog {
-  background-image: url("https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/integration/webclient.test/js-i2b2/cells/PM/assets/login_bg.jpg");
+  background-image: url("https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/master/webclient.test/js-i2b2/cells/PM/assets/login_bg.jpg");
   width: 501px;
   height: 178px;
 }
