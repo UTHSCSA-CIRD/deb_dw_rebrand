@@ -2,8 +2,8 @@ DIV#anaPluginViewBox {
   position: absolute;
 }
 DIV#anaPluginViewBox DIV.PluginViewBox {
-  background: "#AFBFBF" none repeat scroll 0%;
-  border: 1px solid "#667788";
+  background: #AFBFBF none repeat scroll 0%;
+  border: 1px solid #667788;
   clear: both;
   display: block;
   overflow: hidden;
@@ -15,21 +15,21 @@ DIV#anaPluginViewBox DIV.PluginViewBox {
   z-index: 0;
 }
 DIV#anaPluginViewBox DIV#anaPluginViewFrame {
-  background: "#FFFFFF" none repeat scroll 0%;
-  border: 1px solid "#667788";
+  background: #FFFFFF none repeat scroll 0%;
+  border: 1px solid #667788;
   padding: 0px;
   margin: 0px;
   overflow: auto;
 }
 DIV#anaPluginViewFrame DIV.initialMsg {
-  color: "#6677AA";
+  color: #6677AA;
   font-size: 20px;
   position: relative;
   text-align: center;
   top: 49%;
 }
 DIV#anaPluginViewBox DIV#anaPluginViewFrame.USETABS {
-  background: "#AFBFBF";
+  background: #AFBFBF;
   border: 0px;
   padding: 1px;
   margin: 0px;
@@ -46,14 +46,14 @@ DIV#anaPluginViewFrame.USETABS .yui-navset .yui-navset-top .yui-nav a {
   background: #CEDBEF;
   /* tab background */
   border-width: 1px 1px 0 1px;
-  border-color: "#63758C";
+  border-color: #63758C;
 }
 DIV#anaPluginViewFrame.USETABS .yui-navset .yui-nav .selected a,
 DIV#anaPluginViewFrame.USETABS .yui-navset .yui-nav .selected a:focus,
 DIV#anaPluginViewFrame.USETABS .yui-navset .yui-nav .selected a:hover {
-  background: "#DEEBEF";
+  background: #DEEBEF;
   /* selected tab background --BBCCEE */
-  color: "#000000";
+  color: #000000;
 }
 DIV#anaPluginViewFrame.USETABS .yui-navset .yui-nav a:hover,
 DIV#anaPluginViewFrame.USETABS .yui-navset .yui-nav a:focus {
@@ -62,19 +62,19 @@ DIV#anaPluginViewFrame.USETABS .yui-navset .yui-nav a:focus {
 }
 DIV#anaPluginViewFrame.USETABS .yui-navset .yui-nav .selected a,
 DIV#anaPluginViewFrame.USETABS .yui-navset .yui-nav .selected a em {
-  border-color: "#63758C";
+  border-color: #63758C;
   /* selected tab border color --808080 */
 }
 DIV#anaPluginViewFrame.USETABS .yui-navset .yui-content,
 DIV#anaPluginViewFrame.USETABS .yui-navset .yui-navset-top .yui-content {
-  background: "#DEEBEF";
+  background: #DEEBEF;
   /* tab content background --BBCCEE */
-  border-color: "#63758C";
+  border-color: #63758C;
   padding: 5px 0 0 0;
   height: 100%;
 }
 DIV#anaPluginViewFrame.USETABS .yui-navset .yui-nav a em,
 DIV#anaPluginViewFrame.USETABS .yui-navset .yui-navset-top .yui-nav a em {
-  border-top: 1px solid "#63758C";
+  border-top: 1px solid #63758C;
   /* tab border --#a3a3a3 */
 }

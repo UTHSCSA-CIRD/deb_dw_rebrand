@@ -5,7 +5,7 @@ body {
   font-size: 12px;
   line-height: 16px;
   background: url("https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/v0.0.1RC_01/webclient.test/assets/images/background.gif");
-  background-color: "#D9ECF0";
+  background-color: #D9ECF0;
 }
 #topBarTitle {
   position: relative;
@@ -23,8 +23,8 @@ BODY #title-back {
   display: none;
 }
 .xmlMsg {
-  background: "#FFFFFF" none repeat scroll 0%;
-  border: 1px solid "#000000";
+  background: #FFFFFF none repeat scroll 0%;
+  border: 1px solid #000000;
   height: 100%;
   width: 100%;
   overflow: scroll;
@@ -42,14 +42,14 @@ A.selectedView {
 	*/
 }
 #topBarTable td {
-  color: "#FFFFFF";
+  color: #FFFFFF;
 }
 #topBarTable a {
-  color: "#FFFFFF";
+  color: #FFFFFF;
   text-decoration: none;
 }
 #topBarTable a:hover {
-  color: "#FFFFFF";
+  color: #FFFFFF;
   text-decoration: underline;
 }
 #topTitleImg {
@@ -75,7 +75,7 @@ DIV.TopTabs {
 }
 DIV.tabBox {
   background: #AFBFBF none repeat scroll 0%;
-  border-color: "#667788";
+  border-color: #667788;
   border-style: solid solid none;
   border-width: 1px;
   cursor: pointer;
@@ -89,7 +89,7 @@ DIV.tabBox DIV {
   display: inline;
 }
 DIV.tabBox > DIV {
-  color: "#445588";
+  color: #445588;
   font-weight: bold;
   font-family: arial,helvetica;
   font-size: 12px;
@@ -101,23 +101,23 @@ DIV.tabBox > DIV {
 }
 DIV.tabBox.active {
   background: #AFBFBF none repeat scroll 0% 50%;
-  border-color: "#667788";
+  border-color: #667788;
   border-style: solid solid none;
   border-width: 1px;
   margin-right: 5px;
   height: 20px;
 }
 DIV.tabBox.active DIV {
-  background: #747788;
-  border: 1px solid "#667788";
-  color: "#FFFFFF";
+  background: #6677AA;
+  border: 1px solid #667788;
+  color: #FFFFFF;
   font-weight: bold;
   font-family: arial,helvetica;
   font-size: 12px;
 }
 DIV.tabTextBox {
   background: #AFBFBF none repeat scroll 0% 50%;
-  border-color: "#667788";
+  border-color: #667788;
   border-style: solid solid none;
   border-width: 1px;
   cursor: pointer;
@@ -130,9 +130,9 @@ DIV.tabTextBox {
   z-index: 10;
 }
 DIV.tabTextBox DIV {
-  background: #747788 none repeat scroll 0%;
-  border: 1px solid "#667788";
-  color: "#FFFFFF";
+  background: #6677AA none repeat scroll 0%;
+  border: 1px solid #667788;
+  color: #FFFFFF;
   font-family: arial,helvetica;
   font-size: 12px;
   font-weight: bold;
@@ -143,7 +143,7 @@ DIV.tabTextBox DIV {
 }
 /* </standarized main tab style> */
 .pageMask {
-  background: "#000000";
+  background: #000000;
   opacity: 0.25;
   filter: alpha(opacity=25);
   -moz-opacity: 0.25;
@@ -155,36 +155,36 @@ DIV.tabTextBox DIV {
 }
 DIV#PluginListBox DIV.topmenu {
   padding: 2px;
-  background: "#DBE8EF";
+  background: #DBE8EF;
   border: 1px solid #888;
   height: 21px;
   text-align: right;
   overflow: hidden;
 }
 DIV#PluginListBox DIV#anaPluginList {
-  background: "#C3CED4";
-  border: 1px solid "#667788";
+  background: #C3CED4;
+  border: 1px solid #667788;
   height: 350px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 DIV#PluginListBox A.pluginRecordBox {
-  border-top: 1px solid "#FFFFFF";
-  border-left: 1px solid "#FFFFFF";
-  border-right: 1px solid "#FFFFFF";
-  border-bottom: 1px solid "#667788";
+  border-top: 1px solid #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+  border-bottom: 1px solid #667788;
   padding: 1px 5px;
   display: block;
   cursor: pointer;
-  background: "#DBE8EF";
+  background: #DBE8EF;
 }
 DIV#PluginListBox A.pluginRecordBox:hover {
-  background-color: "#FFFFCC";
+  background-color: #FFFFCC;
 }
 DIV#PluginListBox A.pluginRecordBox DIV.Icon {
   float: left;
-  background: "#FFFFFF";
-  border: solid 1px "#667788";
+  background: #FFFFFF;
+  border: solid 1px #667788;
 }
 DIV#PluginListBox A.pluginRecordBox DIV.Name {
   font-family: arial,helvetica;

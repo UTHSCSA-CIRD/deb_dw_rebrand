@@ -8,12 +8,12 @@ DIV#crcQueryToolBox {
 DIV.relationshipAmongEvents {
   text-align: center;
   line-height: 30px;
-  background-color: "#CBD8EF";
-  border: 1px solid "#63758C";
+  background-color: #CBD8EF;
+  border: 1px solid #63758C;
 }
 DIV#crcQueryToolBox DIV.bodyBox {
-  background: "#AFBFBF" none repeat scroll 0%;
-  border: 1px solid "#667788";
+  background: #AFBFBF none repeat scroll 0%;
+  border: 1px solid #667788;
   width: auto;
   height: auto;
   padding: 5px 5px 0px;
@@ -26,8 +26,8 @@ DIV#crcQueryToolBox DIV.bodyBox {
   z-index: 0;
 }
 DIV#crcQueryToolBox DIV.queryNameBar {
-  background: "#AFBFBF" none repeat scroll 0%;
-  border-bottom: 1px solid "#667788";
+  background: #AFBFBF none repeat scroll 0%;
+  border-bottom: 1px solid #667788;
   overflow: hidden;
   padding: 2px 5px 5px;
   margin: 0px -5px 5px;
@@ -43,9 +43,9 @@ DIV#crcQueryToolBox DIV.queryLabel {
   xz-index: 99999;
 }
 DIV#crcQueryToolBox DIV#queryName {
-  background-color: "#CBD8EF";
-  border: 1px solid "#63758C";
-  color: "#4C5676";
+  background-color: #CBD8EF;
+  border: 1px solid #63758C;
+  color: #4C5676;
   font-size: 11px;
   height: 15px;
   line-height: 15px;
@@ -65,9 +65,9 @@ DIV#crcQueryToolBox DIV.qryPanel {
 }
 DIV#crcQueryToolBox DIV.qryPanelTitle {
   text-align: center;
-  background: "#6677AA" none repeat scroll 0%;
-  border: 1px solid "#667788";
-  color: "#FFFFFF";
+  background: #6677AA none repeat scroll 0%;
+  border: 1px solid #667788;
+  color: #FFFFFF;
   font-size: 11px;
   font-weight: bold;
   height: 13px;
@@ -81,8 +81,8 @@ DIV#crcQueryToolBox DIV.qryPanelClear {
   margin: 1px;
 }
 DIV#crcQueryToolBox DIV.queryPanel {
-  background: "#FFFFFF";
-  border: 1px solid "#667788";
+  background: #FFFFFF;
+  border: 1px solid #667788;
   padding: 3px;
   white-space: nowrap;
   overflow: auto;
@@ -94,8 +94,8 @@ DIV#crcQueryToolBox DIV.qryPanelButtonBar {
   margin: 0px 0px -1px 0px;
 }
 DIV#crcQueryToolBox DIV.qryPanelButtonBar DIV {
-  background: "#CBD8EF" none repeat scroll 0%;
-  border: 1px solid "#667788";
+  background: #CBD8EF none repeat scroll 0%;
+  border: 1px solid #667788;
   height: 16px;
   line-height: 16px;
   text-align: center;
@@ -137,7 +137,7 @@ DIV#crcQueryToolBox DIV.qryTemporalConstraint Button {
   min-height: 13px;
 }
 DIV#crcQueryToolBox DIV#qryToolFooter {
-  border-top: 1px solid "#667788";
+  border-top: 1px solid #667788;
   clear: both;
   margin: 0px -5px -2px -5px;
   padding: 5px;
@@ -150,42 +150,42 @@ DIV#crcQueryToolBox DIV.temporalControl {
   width: 200px;
   float: none;
   position: relative;
-  background: "#6677AA";
-  border: 1px solid "#667788";
+  background: #6677AA;
+  border: 1px solid #667788;
   font-weight: bold;
   font-family: arial,helvetica;
   font-size: 11px;
   height: 16px;
   line-height: 16px;
   text-align: center;
-  color: "#FFFFFF";
+  color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
 }
 DIV#crcQueryToolBox DIV.temporalControl a {
-  color: "#FFFFFF";
+  color: #FFFFFF;
   text-decoration: none;
   display: inline-block;
   width: 100%;
   height: 100%;
 }
 DIV#crcQueryToolBox DIV.temporalControl a:hover {
-  background-color: "#7687BF";
+  background-color: #7687BF;
 }
 DIV#crcQueryToolBox DIV#newBox,
 DIV#crcQueryToolBox DIV#printQueryBox,
 DIV#crcQueryToolBox DIV#runBox {
   position: relative;
   xdisplay: none;
-  background: "#6677AA";
-  border: 1px solid "#667788";
+  background: #6677AA;
+  border: 1px solid #667788;
   font-weight: bold;
   font-family: arial,helvetica;
   font-size: 11px;
   height: 16px;
   line-height: 16px;
   text-align: center;
-  color: "#FFFFFF";
+  color: #FFFFFF;
   cursor: pointer;
   float: left;
   margin: 0px 5px 0px 0px;
@@ -196,7 +196,7 @@ DIV#crcQueryToolBox DIV#runBox {
 DIV#crcQueryToolBox DIV#newBox a,
 DIV#crcQueryToolBox DIV#printQueryBox a,
 DIV#crcQueryToolBox DIV#runBox a {
-  color: "#FFFFFF";
+  color: #FFFFFF;
   display: block;
   text-decoration: none;
 }
@@ -208,25 +208,25 @@ a.topicButton {
   display: block;
   text-decoration: none;
   display: inline;
-  background: "#6677AA";
-  border: 1px solid "#667788";
+  background: #6677AA;
+  border: 1px solid #667788;
   font-weight: bold;
   font-family: arial,helvetica;
   font-size: 11px;
   height: 18px;
   line-height: 18px;
   text-align: center;
-  color: "#FFFFFF";
+  color: #FFFFFF;
   cursor: pointer;
   padding: 2px 11px;
 }
 a.topicButton:hover {
-  background-color: "#7687BF";
+  background-color: #7687BF;
 }
 DIV#crcQueryToolBox DIV#newBox a:hover,
 DIV#crcQueryToolBox DIV#printQueryBox a:hover,
 DIV#crcQueryToolBox DIV#runBox a:hover {
-  background-color: "#7687BF";
+  background-color: #7687BF;
 }
 DIV#crcQueryToolBox DIV#groupCount {
   height: 16px;
@@ -240,7 +240,7 @@ DIV#crcQueryToolBox DIV#groupCount {
 DIV#crcQueryToolBox DIV#queryBottom {
   position: relative;
   height: 20px;
-  border-top: 1px solid "#667788";
+  border-top: 1px solid #667788;
   width: 100%;
 }
 DIV#crcQueryToolBox DIV#scrollBox {
@@ -259,11 +259,11 @@ DIV#crcQueryToolBox DIV#queryBalloonBox {
   z-index: 10;
 }
 DIV#crcQueryToolBox DIV.queryBalloon {
-  background: "#FFFF99";
-  border: 1px solid "#667788";
+  background: #FFFF99;
+  border: 1px solid #667788;
   width: 70px;
   height: 40px;
-  color: "#000000";
+  color: #000000;
   font-size: 12px;
   font-weight: bold;
   text-align: center;
@@ -273,11 +273,11 @@ DIV#crcQueryToolBox DIV.queryBalloon {
   display: none;
 }
 DIV#crcQueryToolBox DIV.queryBalloonAnd {
-  background: "#6677AA";
-  border: 1px solid "#667788";
+  background: #6677AA;
+  border: 1px solid #667788;
   width: 45px;
   height: 20px;
-  color: "#FFFFFF";
+  color: #FFFFFF;
   font-size: 14px;
   font-weight: bold;
   text-align: center;

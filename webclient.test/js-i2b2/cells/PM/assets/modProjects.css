@@ -7,19 +7,19 @@ DIV.opAdd {
 DIV#i2b2_projects_modal_dialog DIV#projectAttribs {
   border: #AAA solid;
   border-width: 1px 1px 2px;
-  background-color: "#DDDDFF";
+  background-color: #DDDDFF;
   margin-top: 8px;
 }
 DIV#i2b2_projects_modal_dialog DIV.name {
-  background: "#DDDDFF";
+  background: #DDDDFF;
   border-top: 1px solid #BBB;
   float: left;
   padding-left: 4px;
   width: 119px;
 }
 DIV#pmNavTreeview {
-  background: "#FFFFFF";
-  border: 1px solid "#667788";
+  background: #FFFFFF;
+  border: 1px solid #667788;
   width: auto;
   padding: 1px 5px;
   overflow: auto;
@@ -28,8 +28,8 @@ DIV#pmNav {
   position: absolute;
 }
 DIV#pmNav .bodyBox {
-  background: "#AFBFBF" none repeat scroll 0% 50%;
-  border: 1px solid "#667788";
+  background: #AFBFBF none repeat scroll 0% 50%;
+  border: 1px solid #667788;
   clear: both;
   display: block;
   height: auto;
@@ -44,8 +44,8 @@ DIV#pmMain {
   position: absolute;
 }
 DIV#pmMain .bodyBox {
-  background: "#AFBFBF" none repeat scroll 0% 50%;
-  border: 1px solid "#667788";
+  background: #AFBFBF none repeat scroll 0% 50%;
+  border: 1px solid #667788;
   clear: both;
   display: block;
   height: auto;
@@ -67,8 +67,8 @@ DIV#pmParam {
   position: absolute;
 }
 DIV#pmParam .bodyBox {
-  background: "#AFBFBF" none repeat scroll 0% 50%;
-  border: 1px solid "#667788";
+  background: #AFBFBF none repeat scroll 0% 50%;
+  border: 1px solid #667788;
   clear: both;
   display: block;
   height: auto;
@@ -85,7 +85,7 @@ DIV#i2b2_projects_modal_dialog DIV.value {
   float: right;
   padding-left: 5px;
   width: 248px;
-  background: "#F2F2F2";
+  background: #F2F2F2;
 }
 DIV#i2b2_projects_modal_dialog SELECT#loginProjs {
   width: 200px;
@@ -123,8 +123,8 @@ DIV#i2b2_login_modal_dialog DIV.button INPUT {
 }
 /*** CSS for Project Request  ***/
 DIV#project-request-viewer-body DIV.ProjectRequest-MainContent {
-  background: "#FFFFFF";
-  border: solid "#63758C";
+  background: #FFFFFF;
+  border: solid #63758C;
   border-width: 1px 0;
   overflow: auto;
   height: 100%;
@@ -135,15 +135,15 @@ DIV.ProjectRequest-MainContent DIV.droptrgtlbl {
   text-align: right;
   float: left;
   font-weight: bold;
-  color: "#666666";
+  color: #666666;
   margin: 15px 10px 0px 0px;
 }
 DIV.ProjectRequest-MainContent DIV.droptrgt {
   padding: 5px 10px;
-  background: "#DEEBEF";
+  background: #DEEBEF;
   margin-top: 15px;
   text-align: left;
-  border: 1px solid "#63758C";
+  border: 1px solid #63758C;
   overflow: hidden;
   float: left;
   white-space: nowrap;
@@ -153,6 +153,6 @@ DIV.ProjectRequest-MainContent DIV.outputOptions {
   margin-top: 15px;
   text-align: center;
   float: left;
-  border: 1px solid "#63758C";
+  border: 1px solid #63758C;
   overflow: hidden;
 }

@@ -2,8 +2,8 @@ DIV#crcHistoryBox {
   position: absolute;
 }
 DIV#crcHistoryBox DIV.bodyBox {
-  background: "#AFBFBF" none repeat scroll 0% 50%;
-  border: 1px solid "#667788";
+  background: #AFBFBF none repeat scroll 0% 50%;
+  border: 1px solid #667788;
   clear: both;
   display: block;
   overflow: hidden;
@@ -16,8 +16,8 @@ DIV#crcHistoryBox DIV.bodyBox {
 }
 DIV#crcHistoryBox DIV#crcHistoryData,
 DIV#crcSearchNamesResults {
-  background: "#FFFFFF" none repeat scroll 0%;
-  border: 1px solid "#667788";
+  background: #FFFFFF none repeat scroll 0%;
+  border: 1px solid #667788;
   font-size: 12px;
   line-height: 12px;
   width: auto;
@@ -31,8 +31,8 @@ DIV#crcSearchNamesResults {
   position: relative;
   top: 0px;
   left: 0px;
-  background: "#6677AA";
-  border: 1px solid "#667788";
+  background: #6677AA;
+  border: 1px solid #667788;
   font-weight: bold;
   font-family: arial,helvetica;
   font-size: 11px;
@@ -40,16 +40,16 @@ DIV#crcSearchNamesResults {
   line-height: 16px;
   text-align: center;
   width: 45px;
-  color: "#FFFFFF";
+  color: #FFFFFF;
   cursor: pointer;
   float: left;
   margin-right: 10px;
 }
 .crcFindButton a {
-  color: "#FFFFFF";
+  color: #FFFFFF;
   display: block;
   text-decoration: none;
 }
 .crcFindButton a:hover {
-  background-color: "#7687BF";
+  background-color: #7687BF;
 }

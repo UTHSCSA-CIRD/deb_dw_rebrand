@@ -1,6 +1,6 @@
 DIV#wrkTreeview {
-  background: "#FFFFFF";
-  border: 1px solid "#667788";
+  background: #FFFFFF;
+  border: 1px solid #667788;
   width: auto;
   padding: 1px 5px;
   overflow: auto;
@@ -9,8 +9,8 @@ DIV#wrkWorkplace {
   position: absolute;
 }
 DIV#wrkWorkplace .bodyBox {
-  background: "#AFBFBF" none repeat scroll 0% 50%;
-  border: 1px solid "#667788";
+  background: #AFBFBF none repeat scroll 0% 50%;
+  border: 1px solid #667788;
   clear: both;
   display: block;
   height: auto;
@@ -22,5 +22,5 @@ DIV#wrkWorkplace .bodyBox {
   z-index: 0;
 }
 .ddDropToWorkplace {
-  background: "#FFFF55" !important;
+  background: #FFFF55 !important;
 }

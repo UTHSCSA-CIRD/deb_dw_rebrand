@@ -3,8 +3,8 @@ DIV#ontMainBox {
   left: 15px;
 }
 DIV#ontMainBox DIV#ontMainDisp {
-  background: "#AFBFBF" none repeat scroll 0%;
-  border: 1px solid "#667788";
+  background: #AFBFBF none repeat scroll 0%;
+  border: 1px solid #667788;
   width: auto;
   float: left;
   height: 100%;
@@ -16,8 +16,8 @@ DIV#ontMainBox DIV#ontMainDisp {
   clear: both;
 }
 DIV#modifier-viewer-body DIV.Modifier-MainContent {
-  background: "#FFFFFF";
-  border: solid "#63758C";
+  background: #FFFFFF;
+  border: solid #63758C;
   border-width: 1px 0;
   overflow: auto;
   height: 100%;
@@ -26,11 +26,11 @@ DIV#ontMainBox .findSubTab,
 DIV#ontMainBox .findSubTabSelected {
   font-family: arial,helvetica;
   font-size: 11px;
-  color: "#000000";
+  color: #000000;
   text-decoration: none;
   text-align: center;
-  background: "#CBD8EF" none repeat scroll 0%;
-  border: 1px solid "#667788";
+  background: #CBD8EF none repeat scroll 0%;
+  border: 1px solid #667788;
   overflow: hidden;
   margin-right: 2px;
   padding: 2px 5px 2px 5px;
@@ -40,18 +40,18 @@ DIV#ontMainBox .findSubTabSelected {
   width: 90px;
 }
 DIV#ontMainBox .findSubTabSelected {
-  background: "#DBE8EF";
+  background: #DBE8EF;
   border-bottom-style: none;
   z-index: 10;
 }
 DIV#ontMainBox .findSubTab:hover {
-  background: "#DBE8EF";
+  background: #DBE8EF;
 }
 DIV#ontMainBox DIV.findSubFrame {
   position: relative;
   top: 6px;
-  border: 1px solid "#667788";
-  background: "#DBE8EF";
+  border: 1px solid #667788;
+  background: #DBE8EF;
   padding: 2px 5px 2px 5px;
 }
 #searchNamesForm,
@@ -59,7 +59,7 @@ DIV#ontMainBox DIV.findSubFrame {
 #searchCodesForm {
   width: auto;
   height: 80px;
-  border-bottom: 1px solid "#445588";
+  border-bottom: 1px solid #445588;
   overflow: hidden;
 }
 #ontSearchNamesResults,
@@ -67,9 +67,9 @@ DIV#ontMainBox DIV.findSubFrame {
 #ontSearchCodesResults {
   margin-top: 5px;
   width: auto;
-  background-color: "#FFFFFF";
+  background-color: #FFFFFF;
   overflow: auto;
-  border: 1px solid "#667788";
+  border: 1px solid #667788;
 }
 #ontFindNameButtonWorking {
   float: left;
@@ -84,8 +84,8 @@ DIV#ontMainBox DIV.findSubFrame {
   position: relative;
   top: 0px;
   left: 0px;
-  background: "#6677AA";
-  border: 1px solid "#667788";
+  background: #6677AA;
+  border: 1px solid #667788;
   font-weight: bold;
   font-family: arial,helvetica;
   font-size: 11px;
@@ -93,25 +93,25 @@ DIV#ontMainBox DIV.findSubFrame {
   line-height: 16px;
   text-align: center;
   width: 45px;
-  color: "#FFFFFF";
+  color: #FFFFFF;
   cursor: pointer;
   float: left;
   margin-right: 10px;
 }
 .ontFindButton a {
-  color: "#FFFFFF";
+  color: #FFFFFF;
   display: block;
   text-decoration: none;
 }
 .ontFindButton a:hover {
-  background-color: "#7687BF";
+  background-color: #7687BF;
 }
 .ontModifierButton {
   position: relative;
   top: 0px;
   left: 0px;
-  background: "#6677AA";
-  border: 1px solid "#667788";
+  background: #6677AA;
+  border: 1px solid #667788;
   font-weight: bold;
   font-family: arial,helvetica;
   font-size: 11px;
@@ -119,24 +119,24 @@ DIV#ontMainBox DIV.findSubFrame {
   line-height: 16px;
   text-align: center;
   width: 75px;
-  color: "#FFFFFF";
+  color: #FFFFFF;
   cursor: pointer;
   float: left;
   margin-right: 10px;
 }
 .ontModifierButton a {
-  color: "#FFFFFF";
+  color: #FFFFFF;
   display: block;
   text-decoration: none;
 }
 .ontModifierButton a:hover {
-  background-color: "#7687BF";
+  background-color: #7687BF;
 }
 /* Ontology Navigate window */
 DIV#ontMainBox DIV#ontNavDisp {
   width: auto;
-  background: "#FFFFFF" none repeat scroll 0%;
-  border: 1px solid "#667788";
+  background: #FFFFFF none repeat scroll 0%;
+  border: 1px solid #667788;
   overflow: auto;
   padding: 3px;
   white-space: nowrap;
@@ -155,11 +155,11 @@ DIV#ontMainBox DIV#ontBalloonBox {
   display: none;
 }
 DIV#ontMainBox DIV#ontBalloon {
-  background: "#FFFF99";
-  border: 1px solid "#667788";
+  background: #FFFF99;
+  border: 1px solid #667788;
   width: 70px;
   height: 40px;
-  color: "#000000";
+  color: #000000;
   font-size: 12px;
   font-weight: bold;
   text-align: center;
