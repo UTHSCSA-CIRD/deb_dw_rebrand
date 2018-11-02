@@ -89,7 +89,7 @@ DIV.TopTabs {
 
 
 DIV.tabBox {
-	background:#AFBFBF none repeat scroll 0%;
+	background:#BBCCEE none repeat scroll 0%;
 	border-color:#667788;
 	border-style:solid solid none;
 	border-width:1px;
@@ -119,7 +119,7 @@ DIV.tabBox > DIV {
 
 
 DIV.tabBox.active {
-	background:#AFBFBF none repeat scroll 0% 50%;
+	background:#BBCCEE none repeat scroll 0% 50%;
 	border-color:#667788;
 	border-style:solid solid none;
 	border-width:1px;
@@ -127,7 +127,7 @@ DIV.tabBox.active {
 	height:20px;
 }
 DIV.tabBox.active DIV {
-	background:#747788;
+	background:#6677AA;
 	border:1px solid #667788;
 	color:#FFFFFF;
 	font-weight:bold;
@@ -136,7 +136,7 @@ DIV.tabBox.active DIV {
 }
 
 DIV.tabTextBox {
-	background:#AFBFBF none repeat scroll 0% 50%;
+	background:#BBCCEE none repeat scroll 0% 50%;
 	border-color:#667788;
 	border-style:solid solid none;
 	border-width:1px;
@@ -150,7 +150,7 @@ DIV.tabTextBox {
 	z-index:10;
 }
 DIV.tabTextBox DIV {
-	background: #747788 none repeat scroll 0%;
+	background: #6677AA none repeat scroll 0%;
 	border: 1px solid #667788;
 	color: #FFFFFF;
 	font-family: arial,helvetica;

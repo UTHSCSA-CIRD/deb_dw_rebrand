@@ -101,7 +101,7 @@ DIV.yuimenu DIV.bd {
 	overflow:hidden;
 }
 #itemPrevQueryBox {
-	background:#AFBFBF;
+	background:#BBCCEE;
 	border:1px solid #667788;
 	width:200px;
 	height:50px;
@@ -140,7 +140,7 @@ DIV.yuimenu DIV.bd {
 	font-weight:bold;
 }
 #queryBuildBox {
-	background:#AFBFBF;
+	background:#BBCCEE;
 	border:1px solid #667788;
 	width:524px;
 	height:280px;
@@ -154,7 +154,7 @@ DIV.yuimenu DIV.bd {
 	top:31px;
 	width:166px;
 	height:13px;
-	background:#747788;
+	background:#6677AA;
 	border:1px solid #667788;
 	overflow:hidden;
 	color:#FFFFFF;
@@ -164,7 +164,7 @@ DIV.yuimenu DIV.bd {
 	line-height:12px;
 }
 .queryPanelDisabled {
-	background:#E0EDF0 !important;	
+	background:#DBE8FF !important;	
 }
 .queryPanelClear {
 	position:absolute;
@@ -177,7 +177,7 @@ DIV.yuimenu DIV.bd {
 	top:45px;
 	width:38px;
 	height:16px;
-	background:#DFEFEF;
+	background:#CBD8EF;
 	border:1px solid #667788;
 	overflow:hidden;
 	line-height:16px;
@@ -188,7 +188,7 @@ DIV.yuimenu DIV.bd {
 	top:45px;
 	width:80px;
 	height:16px;
-	background:#DFEFEF;
+	background:#CBD8EF;
 	border:1px solid #667788;
 	overflow:hidden;
 	line-height:16px;
@@ -218,14 +218,14 @@ DIV.yuimenu DIV.bd {
 	top:45px;
 	width:46px;
 	height:16px;
-	background:#DFEFEF;
+	background:#CBD8EF;
 	border:1px solid #667788;
 	overflow:hidden;
 	line-height:16px;
 	text-align:center;
 }
 .queryPanelButtonHover:hover {
-	background:#E0EDF0;
+	background:#DBE8FF;
 }
 .queryPanelButton {
 	color:#000;
@@ -258,7 +258,7 @@ DIV.yuimenu DIV.bd {
 	left:0px;
 	width:514px;
 	height:146px;
-	background:#AFBFBF;
+	background:#BBCCEE;
 	border:1px solid #667788;
 	padding:5px;
 	overflow:hidden;
@@ -283,7 +283,7 @@ DIV.yuimenu DIV.bd {
 	left:0px;
 	width:514px;
 	height:148px;
-	background:#AFBFBF;
+	background:#BBCCEE;
 	border:1px solid #667788;
 	padding:5px;
 	overflow:hidden;
@@ -304,7 +304,7 @@ DIV.yuimenu DIV.bd {
 	left:0px;
 	width:514px;
 	height:146px;
-	background:#AFBFBF;
+	background:#BBCCEE;
 	border:1px solid #667788;
 	padding:5px;
 	overflow:hidden;
@@ -340,7 +340,7 @@ DIV.yuimenu DIV.bd {
 
 
 #queryOptionsBar {
-	background:#AFBFBF;
+	background:#BBCCEE;
 	border-bottom:1px solid #667788;
 	width:100%;
 	height:25px;
@@ -353,7 +353,7 @@ DIV.yuimenu DIV.bd {
 	padding:0;
 }
 #joinType {
-	background:#747788;
+	background:#6677AA;
 	color:#FFFFFF;
 	font-size:9px;
 	margin:3px;
@@ -364,14 +364,14 @@ DIV.yuimenu DIV.bd {
 	width:110px;
 	height:18px;
 	border:1px solid #667788;
-	background:#AFBFBF;
+	background:#BBCCEE;
 	z-index:501;
 	display:none;
 	line-height:18px;
 }
 #itemOptions a {
 	display:block;
-	background:#AFBFBF;
+	background:#BBCCEE;
 	color:#000000;
 	font-size:12px;
 	padding:0px 3px;
@@ -389,13 +389,13 @@ DIV.yuimenu DIV.bd {
 	top:65px;
 	left:50px;
 	border:3px solid #667788;
-	background:#AFBFBF;
+	background:#BBCCEE;
 	z-index:502;
 	display:none;
 	line-height:18px;
 }
 .dialogButton {
-	background:#747788;
+	background:#6677AA;
 	color:#FFFFFF;
 	font-weight:bold;
 	width:80px;
@@ -417,7 +417,7 @@ p.infoIndent {
 	width:41px;
 	height:14px;
 	font-size:9px;
-	background:#AFBFBF;
+	background:#BBCCEE;
 	border:1px solid #667788;
 	padding:4px 5px;
 	line-height:16px;
@@ -450,7 +450,7 @@ p.infoIndent {
 #loginBox {
 	margin-top:130px;
 	border:3px solid #667788;
-	background:#AFBFBF;
+	background:#BBCCEE;
 	width:300px;
 	padding:20px 0px;
 	color:#445588;
