@@ -45,18 +45,6 @@
 // $j('.USETABS, #anaPluginList').css('background-color','rgb(175,191,191)');
 // $j('li').not('.selected').children('.yui-nav a').css('background-color','rgb(222,239,239)');
 // $j('li.selected').children('.yui-nav a').css('background-color','rgb(222,235,239)');
-
-
-
-/*
- var remurl = 'https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/v0.0.1RC/assets/';
- var cssfile = 'i2b2-NEW.css';
-*/
-
-// cssFiles = ['assets/i2b2.css','assets/i2b2-NEW.css','js-i2b2/cells/PLUGINMGR/assets/vwViewer.css'
-// 	   ,'js-i2b2/cells/PM/assets/modProjects.css','js-i2b2/cells/CRC/assets/query_report.css'
-// 	   ,'js-i2b2/ui.styles/ui.styles.css'];
-
 cssFiles = [
   'js-i2b2/ui.styles/ui.styles.css'
   ,'js-i2b2/cells/CRC/assets/query_report.css'
@@ -73,12 +61,21 @@ cssFiles = [
   ,'assets/msg_sniffer.css','assets/msg_snifferIE6.css'
   ]
 
+impCss = {
+   'vwViewer.css': 'js-i2b2/cells/PLUGINMGR/assets/'
+  ,'vwHistory.css': 'js-i2b2/cells/CRC/assets/'
+  ,'vwQryTool.css': 'js-i2b2/cells/CRC/assets/'
+  ,'vwStatus.css': 'js-i2b2/cells/CRC/assets/'
+  ,'vwWork.css': 'js-i2b2/cells/WORK/assets/'
+  ,'ontMain.css': 'js-i2b2/cells/ONT/assets/'
+};
+  
 //remurl='https://github.com/UTHSCSA-CIRD/deb_dw_rebrand/raw/f_less/webclient.test/';
 remurl='https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/v0.0.1RC_01/webclient.test/';
 
 function testRemoteBranding(cssfile,remurl){
   /* remove the local css link */
-  $j("head link[href*='"+cssfile+"'").remove();
+  //$j("head link[href*='"+cssfile+"'").remove();
   /* get a handle to the document head */
   var head = document.head || document.getElementsByTagName('head')[0];
   /* set up handle for AJAX request */
@@ -107,7 +104,17 @@ function testRemoteBranding(cssfile,remurl){
   }
   xhttp.send();
 }
-$j.each(cssFiles,function(ii) {testRemoteBranding(cssFiles[ii],remurl)})
+
+// Remove and replace css statically linked from HTML
+$j.each(cssFiles,function(ii) {
+  //$j("head link[href*='"+cssFiles[ii]+"'").remove();
+  testRemoteBranding(cssFiles[ii],remurl);
+});
+
+// replace css imported by other css
+$j.each(impCss,function(kk,vv){
+  testRemoteBranding(vv+kk,remurl);
+});
 
 /* Replace the title on the top right */
 $j('#topBarTitle').prop('src',remurl+'assets/images/title.gif');
@@ -116,3 +123,27 @@ $j('#topBarTitle').prop('src',remurl+'assets/images/title.gif');
 $j('.formDiv').children('div.label')[2].innerText = 'Server:';
 
 $j('#i2b2_login_modal_dialog_h').html(function(_,content){return content.gsub('i2b2 ','')});
+
+
+// get rid of statically linked sheets
+$j.each(cssFiles,function(ii) {$j("head link[href*='"+cssFiles[ii]+"'").remove()});
+
+// How to track down each of those nasty imported sheets... first we remove anything for which
+// we have a replacement
+ss = $j("link[href*='main_list.css']").map(function() { return this.sheet; }).get();
+
+for(ii in ss){for(jj in ss[ii].cssRules){
+  if(Object.keys(impCss).indexOf(ss[ii].cssRules[jj].href)>=0){ss[ii].removeRule(jj)}}};
+
+  
+// $j.each(ss,function(ii){
+//   if(ss[ii].href){
+//     if(ss[ii].href.endsWith('main_list.css')){
+//       if(ss[ii].cssRules){
+// 	for(jj in ss[ii].cssRules){
+// 	  if (ss[ii].cssRules[jj].href) {
+// 	    if(Object.keys(impCss).indexOf(ss[ii].cssRules[jj].href)>=0){
+// 	      ss[ii].removeRule(jj);
+// 	  }}}}}}});
+// 
+
