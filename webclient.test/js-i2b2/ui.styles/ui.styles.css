@@ -10,7 +10,7 @@
   width: 6px;
   bottom: 0%;
   background-color: #AFBFBF;
-  background-image: url('../../assets/images/splitter.handle.image.gif');
+  background-image: url("https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/integration/webclient.test/assets/images/splitter.handle.image.gif");
   background-repeat: no-repeat;
   background-position: center;
   cursor: ew-resize;
