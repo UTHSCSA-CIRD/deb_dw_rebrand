@@ -56,9 +56,11 @@ cssFiles = [
 
 impCss = {
    'vwViewer.css': 'js-i2b2/cells/PLUGINMGR/assets/'
+  ,'vwList.css':   'js-i2b2/cells/PLUGINMGR/assets/'
   ,'vwHistory.css': 'js-i2b2/cells/CRC/assets/'
   ,'vwQryTool.css': 'js-i2b2/cells/CRC/assets/'
   ,'vwStatus.css': 'js-i2b2/cells/CRC/assets/'
+  ,'modLabValues.css': 'js-i2b2/cells/CRC/assets/'
   ,'vwWork.css': 'js-i2b2/cells/WORK/assets/'
   ,'ontMain.css': 'js-i2b2/cells/ONT/assets/'
 };
