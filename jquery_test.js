@@ -121,6 +121,3 @@ document.body.appendChild(button);
 //  if(Object.keys(impCss).indexOf(ss[ii].cssRules[jj].href)>=0){ss[ii].removeRule(jj)}}};
 
 
-/* The following got rejected because of strict MIME type. So instead I have to crunch down the above
-javascript:(function(){_my_script=document.createElement('SCRIPT');_my_script.type='text/javascript';_my_script.src='https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/v0.0.1RC_01/jquery_test.js';document.getElementsByTagName('head')[0].appendChild(_my_script);})();
-*/
