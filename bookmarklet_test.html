@@ -1,6 +1,29 @@
 <html>
 <head>
 <title>Bookmarklet Test</title>
+<link rel="stylesheet" type="text/css" href="webclient/js-i2b2/ui.styles/ui.styles.css">
+<link type="text/css" href="webclient/js-i2b2/cells/CRC/assets/query_report.css" rel="stylesheet" />
+
+<!-- Bug in IE - use MINIMUM number of LINK and STYLE tags in the DOM as possible: http://support.microsoft.com/kb/262161 -->
+<style>
+ @import url(assets/mod-treeview.css);
+ @import url(assets/help_viewer.css);
+ @import url(assets/msg_sniffer.css);
+.myAccordion .yui-cms-accordion .yui-cms-item .accordionToggleItem {
+	width: 1px;
+	height: 1px;
+	display: block;
+	background: url(assets/images/accordion.gif) no-repeat 0px -200px;
+	text-decoration: none;
+	float: left;
+}
+.myAccordion .yui-cms-accordion .yui-cms-item.selected .accordionToggleItem {
+	background: url(assets/images/accordion.gif) no-repeat 0px -300px;
+}
+</style>
+
+<link type="text/css" href="webclient/assets/i2b2.css" rel="stylesheet" />
+<link type="text/css" href="webclient/assets/i2b2-NEW.css" rel="stylesheet" />
 </head>
 <body>
 
