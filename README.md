@@ -100,3 +100,4 @@ It would probably be a good idea to abstract whatever styling changes you need t
 than editing the files of `webclient.less` in place. That being said, changes you make to `webclient.less` will
 propagate to `webclient` and `webclient.test`, so if you must edit raw source files, that's the place to do it.
 
+At the moment I manually minify `jquery_test.js` via https://javascript-minifier.com/ and then URL-encode it via https://mrcoles.com/bookmarklet/ in order to create the bookmarklet in `bookmarklet_test.html`.
