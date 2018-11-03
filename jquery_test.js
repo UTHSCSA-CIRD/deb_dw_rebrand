@@ -94,11 +94,8 @@ function testRemoteBranding(cssfile,remurl){
 	//return cssQualified;
       } else {
 	console.log("Error", xhttp.statusText);
-      }
-    }
-  }
-  xhttp.send();
-}
+      }}}
+      xhttp.send();}
 
 var button = document.createElement("Button");
 button.innerHTML = "Rebrand!";
