@@ -56,15 +56,17 @@ cssFiles = [
 
 impCss = {
    'vwViewer.css': 'js-i2b2/cells/PLUGINMGR/assets/'
+  ,'vwList.css':   'js-i2b2/cells/PLUGINMGR/assets/'
   ,'vwHistory.css': 'js-i2b2/cells/CRC/assets/'
   ,'vwQryTool.css': 'js-i2b2/cells/CRC/assets/'
   ,'vwStatus.css': 'js-i2b2/cells/CRC/assets/'
+  ,'modLabValues.css': 'js-i2b2/cells/CRC/assets/'
   ,'vwWork.css': 'js-i2b2/cells/WORK/assets/'
   ,'ontMain.css': 'js-i2b2/cells/ONT/assets/'
 };
   
 //remurl='https://github.com/UTHSCSA-CIRD/deb_dw_rebrand/raw/f_less/webclient.test/';
-remurl='https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/integration/webclient.test/';
+remurl='https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/v0.0.1RC_01/webclient.test/';
 
 function testRemoteBranding(cssfile,remurl){
   /* remove the local css link */
@@ -92,11 +94,8 @@ function testRemoteBranding(cssfile,remurl){
 	//return cssQualified;
       } else {
 	console.log("Error", xhttp.statusText);
-      }
-    }
-  }
-  xhttp.send();
-}
+      }}}
+      xhttp.send();}
 
 var button = document.createElement("Button");
 button.innerHTML = "Rebrand!";
