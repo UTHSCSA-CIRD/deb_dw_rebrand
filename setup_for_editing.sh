@@ -23,6 +23,43 @@ export remurl="$gitbase$gitrepo/$gitbranch/$testdir";
 # Files that mksedscr will use to create a sed script
 export lessfiles=(global.less altspellings.less);
 
+# Files to overwrite with the other branch when merging
+export ovrwrtfiles=(README.md bookmarklet.js bookmarklet_test.html);
+
+# For URL encoding
+# https://stackoverflow.com/a/10660730
+rawurlencode() {
+  local string="${1}"
+  local strlen=${#string}
+  local encoded=""
+  local pos c o
+
+  for (( pos=0 ; pos<strlen ; pos++ )); do
+     c=${string:$pos:1}
+     case "$c" in
+        [-_.~a-zA-Z0-9] ) o="${c}" ;;
+        * )               printf -v o '%%%02X' "'$c"
+     esac
+     encoded+="${o}"
+  done
+  echo "${encoded}"    # You can either set a return variable (FASTER) 
+  REPLY="${encoded}"   #+or echo the result (EASIER)... or both... :p
+}
+
+# url encoded version of remurl and its target
+export enctarget="remurl%3D%2[27].*%2F%2[27]";
+export remurlenc=$(rawurlencode remurl=\"$remurl/\");
+# update the reference bookmarklet
+sed -i  "s|$enctarget|$remurlenc|" bookmarklet.js;
+# insert that bookmarklet into the html example
+sed -i "s|<a href=\".*\">Rebrand i2b2|<a href=\"$(cat bookmarklet.js)\">Rebrand i2b2|" bookmarklet_test.html;
+# and the md (though it doesn't work there at this time)
+sed -i "s|<a href=\".*\">bookmarklet|<a href=\"$(cat bookmarklet.js)\">bookmarklet|" README.md;
+
+# replace them in the minified bookmarklets
+#sed -i "s/$enctarget/$remurlenc/g" README.md;
+#sed -i "s/$enctarget/$remurlenc/g" bookmarklet_test.html
+
 # Make sure that the test script is using the correct remurl
 sed -i "/^remurl=/ s|https://.*/|$remurl/|" jquery_test.js;
 # Make sure that global.less has the right branch and url
@@ -37,6 +74,7 @@ mksedscr (){
     s/^\(@[a-z_0-9]*\):.*\/\/ \/\/ \(.*\)$/s|['\"]\\\\{0,1\\\\}\2['\"]\\\\{0,1\\\\}|\1|gI/" \
     $ii >> css2less.sed;
     done;
+    cat static_directives.sed >> css2less.sed;
 }
 
 # Converts original css files to less. Warning! This blows away the original files. We need to

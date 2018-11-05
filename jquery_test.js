@@ -36,27 +36,31 @@
 // $j('li').not('.selected').children('.yui-nav a').css('background-color','rgb(222,239,239)');
 //window.location.href = "https://i2b2.uthscsa.edu/webclient/";
 
-cssFiles = [
-  'js-i2b2/ui.styles/ui.styles.css'
-  ,'js-i2b2/cells/CRC/assets/query_report.css'
-  ,'assets/i2b2.css','assets/i2b2-NEW.css'
-  ,'js-i2b2/cells/PM/assets/modProjects.css'
   //,'assets/help_viewer.css'
-  ,'assets/new-treeview.css','assets/mod-treeview.css','assets/tree.css'
-  ,'js-i2b2/cells/PLUGINMGR/assets/vwViewer.css'
   //,'js-i2b2/cells/CRC/assets/main_list.css'
   //,'js-i2b2/cells/ONT/assets/main_list.css'
   //,'js-i2b2/cells/PLUGINMGR/assets/main_list.css'
   //,'js-i2b2/cells/WORK/assets/main_list.css'
   //,'js-i2b2/cells/plugins/standard/Dem1Set/assets/vwDem1Set.css'
+
+
+cssFiles = [
+  'js-i2b2/ui.styles/ui.styles.css'
+  ,'js-i2b2/cells/CRC/assets/query_report.css'
+  ,'assets/i2b2.css','assets/i2b2-NEW.css'
+  ,'js-i2b2/cells/PM/assets/modProjects.css'
+  //,'assets/new-treeview.css','assets/mod-treeview.css','assets/tree.css'
+  ,'js-i2b2/cells/PLUGINMGR/assets/vwViewer.css'
   ,'assets/msg_sniffer.css','assets/msg_snifferIE6.css'
   ]
 
 impCss = {
    'vwViewer.css': 'js-i2b2/cells/PLUGINMGR/assets/'
+  ,'vwList.css':   'js-i2b2/cells/PLUGINMGR/assets/'
   ,'vwHistory.css': 'js-i2b2/cells/CRC/assets/'
   ,'vwQryTool.css': 'js-i2b2/cells/CRC/assets/'
   ,'vwStatus.css': 'js-i2b2/cells/CRC/assets/'
+  ,'modLabValues.css': 'js-i2b2/cells/CRC/assets/'
   ,'vwWork.css': 'js-i2b2/cells/WORK/assets/'
   ,'ontMain.css': 'js-i2b2/cells/ONT/assets/'
 };
@@ -90,11 +94,8 @@ function testRemoteBranding(cssfile,remurl){
 	//return cssQualified;
       } else {
 	console.log("Error", xhttp.statusText);
-      }
-    }
-  }
-  xhttp.send();
-}
+      }}}
+      xhttp.send();}
 
 var button = document.createElement("Button");
 button.innerHTML = "Rebrand!";
@@ -105,6 +106,7 @@ button.onclick = function(){
   $j('#topBarTitle').prop('src',remurl+'assets/images/title.gif'); //top-left title
   $j('.formDiv').children('div.label')[2].innerText = 'Server:'; //no i2b2 on box menu
   $j('#i2b2_login_modal_dialog_h').html(function(_,content){return content.gsub('i2b2 ','')}); //debrand login
+  $j.each($j('img[src*="QryTool"]'),function(){this.setAttribute('src',this.src.replace(this.baseURI,remurl))}); // replace query buttons
 }
 document.body.appendChild(button);
 
@@ -119,6 +121,3 @@ document.body.appendChild(button);
 //  if(Object.keys(impCss).indexOf(ss[ii].cssRules[jj].href)>=0){ss[ii].removeRule(jj)}}};
 
 
-/* The following got rejected because of strict MIME type. So instead I have to crunch down the above
-javascript:(function(){_my_script=document.createElement('SCRIPT');_my_script.type='text/javascript';_my_script.src='https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/v0.0.1RC_01/jquery_test.js';document.getElementsByTagName('head')[0].appendChild(_my_script);})();
-*/
