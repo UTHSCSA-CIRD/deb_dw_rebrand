@@ -106,6 +106,7 @@ button.onclick = function(){
   $j('#topBarTitle').prop('src',remurl+'assets/images/title.gif'); //top-left title
   $j('.formDiv').children('div.label')[2].innerText = 'Server:'; //no i2b2 on box menu
   $j('#i2b2_login_modal_dialog_h').html(function(_,content){return content.gsub('i2b2 ','')}); //debrand login
+  $j.each($j('img[src*="QryTool"]'),function(){this.setAttribute('src',this.src.replace(this.baseURI,remurl))}); // replace query buttons
 }
 document.body.appendChild(button);
 
