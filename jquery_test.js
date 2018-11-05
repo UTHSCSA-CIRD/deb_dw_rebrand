@@ -49,7 +49,7 @@ cssFiles = [
   ,'js-i2b2/cells/CRC/assets/query_report.css'
   ,'assets/i2b2.css','assets/i2b2-NEW.css'
   ,'js-i2b2/cells/PM/assets/modProjects.css'
-  ,'assets/new-treeview.css','assets/mod-treeview.css','assets/tree.css'
+  //,'assets/new-treeview.css','assets/mod-treeview.css','assets/tree.css'
   ,'js-i2b2/cells/PLUGINMGR/assets/vwViewer.css'
   ,'assets/msg_sniffer.css','assets/msg_snifferIE6.css'
   ]
@@ -66,7 +66,7 @@ impCss = {
 };
   
 //remurl='https://github.com/UTHSCSA-CIRD/deb_dw_rebrand/raw/f_less/webclient.test/';
-remurl='https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/master/webclient.test/';
+remurl='https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/gh-pages/webclient.test/';
 
 function testRemoteBranding(cssfile,remurl){
   /* remove the local css link */

@@ -4,7 +4,7 @@ body {
   font-family: arial,helvetica;
   font-size: 12px;
   line-height: 16px;
-  background: url("https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/master/webclient.test/assets/images/background.gif");
+  background: url("https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/gh-pages/webclient.test/assets/images/background.gif");
   background-color: #D9ECF0;
 }
 #topBarTitle {
@@ -15,7 +15,7 @@ BODY #title-back {
   position: absolute;
   left: 0px;
   top: 0px;
-  background-image: url("https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/master/webclient.test/assets/images/title_back.gif");
+  background-image: url("https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/gh-pages/webclient.test/assets/images/title_back.gif");
   background-position: center;
   background-repeat: none;
   height: 26px;
