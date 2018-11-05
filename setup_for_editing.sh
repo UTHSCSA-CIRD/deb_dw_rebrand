@@ -23,6 +23,9 @@ export remurl="$gitbase$gitrepo/$gitbranch/$testdir";
 # Files that mksedscr will use to create a sed script
 export lessfiles=(global.less altspellings.less);
 
+# Files to overwrite with the other branch when merging
+export ovrwrtfiles=(README.md bookmarklet.js bookmarklet_test.html);
+
 # For URL encoding
 # https://stackoverflow.com/a/10660730
 rawurlencode() {
@@ -54,8 +57,8 @@ sed -i "s|<a href=\".*\">Rebrand i2b2|<a href=\"$(cat bookmarklet.js)\">Rebrand 
 sed -i "s|<a href=\".*\">bookmarklet|<a href=\"$(cat bookmarklet.js)\">bookmarklet|" README.md;
 
 # replace them in the minified bookmarklets
-sed -i "s/$enctarget/$remurlenc/g" README.md;
-sed -i "s/$enctarget/$remurlenc/g" bookmarklet_test.html
+#sed -i "s/$enctarget/$remurlenc/g" README.md;
+#sed -i "s/$enctarget/$remurlenc/g" bookmarklet_test.html
 
 # Make sure that the test script is using the correct remurl
 sed -i "/^remurl=/ s|https://.*/|$remurl/|" jquery_test.js;
