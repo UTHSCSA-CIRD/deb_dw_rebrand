@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # script to properly merge changes from other branches
 
-mbranch="$1";
+mbranch=${1:-'integration'};
 echo MERGING: $mbranch;
 
 source setup_for_editing.sh;
