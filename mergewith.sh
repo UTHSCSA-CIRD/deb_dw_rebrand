@@ -2,6 +2,7 @@
 # script to properly merge changes from other branches
 
 mbranch="$1";
+echo MERGING: $mbranch;
 
 source setup_for_editing.sh;
 
