@@ -9,9 +9,9 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('../../../../assets/fonts/open-sans-v13-latin-regular.eot');
+  src: url('https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/integration/webclient.test/assets/fonts/open-sans-v13-latin-regular.eot');
   /* IE9 Compat Modes */
-  src: local('Open Sans'), local('OpenSans'), url('../../../../assets/fonts/open-sans-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../../../../assets/fonts/open-sans-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('../../../../assets/fonts/open-sans-v13-latin-regular.woff') format('woff'), /* Modern Browsers */ url('../../../../assets/fonts/open-sans-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../../../../assets/fonts/open-sans-v13-latin-regular.svg#OpenSans') format('svg');
+  src: local('Open Sans'), local('OpenSans'), url('https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/integration/webclient.test/assets/fonts/open-sans-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/integration/webclient.test/assets/fonts/open-sans-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/integration/webclient.test/assets/fonts/open-sans-v13-latin-regular.woff') format('woff'), /* Modern Browsers */ url('https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/integration/webclient.test/assets/fonts/open-sans-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('https://raw.githubusercontent.com/UTHSCSA-CIRD/deb_dw_rebrand/integration/webclient.test/assets/fonts/open-sans-v13-latin-regular.svg#OpenSans') format('svg');
   /* Legacy iOS */
 }
 #QueryReportContainer {
