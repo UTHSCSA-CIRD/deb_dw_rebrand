@@ -71,6 +71,7 @@ mksedscr (){
     s/^\(@[a-z_0-9]*\):.*\/\/ \/\/ \(.*\)$/s|['\"]\\\\{0,1\\\\}\2['\"]\\\\{0,1\\\\}|\1|gI/" \
     $ii >> css2less.sed;
     done;
+    cat static_directives.sed >> css2less.sed;
 }
 
 # Converts original css files to less. Warning! This blows away the original files. We need to
